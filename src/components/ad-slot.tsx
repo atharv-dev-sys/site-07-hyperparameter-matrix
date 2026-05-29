@@ -1,7 +1,3 @@
-
-"use client";
-
-
 "use client";
 
 import React, { useEffect, useRef } from 'react';
@@ -67,11 +63,6 @@ export function AdSlot({ className, label = "Advertisement", variant, slotId }: 
       ></ins>
       <span className="absolute top-1 right-1 pointer-events-none opacity-40 font-mono text-[9px] uppercase tracking-wider">
         {label}
-      </span>
-    </div>
-  );
-}
-
       </span>
     </div>
   );
