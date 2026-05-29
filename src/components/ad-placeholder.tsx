@@ -48,7 +48,7 @@ export function AdPlaceholder({ className, label = "Advertisement", variant, slo
       <ins 
         className="adsbygoogle"
         style={{ display: 'block' }}
-        data-ad-client="ca-pub-5015165884772367"
+        data-ad-client="ca-pub-6318347746004237"
         data-ad-slot="YOUR_AD_SLOT_HERE"
         data-ad-format="auto"
         data-full-width-responsive="true"

@@ -35,7 +35,7 @@ export default function ContactPage() {
       `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
     );
 
-    window.location.href = `mailto:contact@techhub.com?subject=${mailtoSubject}&body=${mailtoBody}`;
+    window.location.href = `mailto:atharvpatileoxs@gmail.com?subject=${mailtoSubject}&body=${mailtoBody}`;
   };
 
   return (
@@ -93,7 +93,7 @@ export default function ContactPage() {
                 <CardContent className="space-y-4">
                     <div className="flex items-center gap-3">
                         <Mail className="h-6 w-6 text-primary" />
-                        <a href="mailto:contact@techhub.com" className="text-foreground/90 hover:text-primary">contact@techhub.com</a>
+                        <a href="mailto:atharvpatileoxs@gmail.com" className="text-foreground/90 hover:text-primary">atharvpatileoxs@gmail.com</a>
                     </div>
                 </CardContent>
             </Card>
@@ -104,7 +104,7 @@ export default function ContactPage() {
                      <CardDescription>Connect with us on professional platforms.</CardDescription>
                 </CardHeader>
                 <CardContent className="flex space-x-6">
-                    <Link href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile" className="text-muted-foreground hover:text-primary"><Linkedin className="h-7 w-7" /></Link>
+                    <Link href="https://www.linkedin.com/in/atharv-patil-bab53a284/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile" className="text-muted-foreground hover:text-primary"><Linkedin className="h-7 w-7" /></Link>
                 </CardContent>
             </Card>
         </div>

@@ -1,6 +1,9 @@
 
 "use client";
 
+
+"use client";
+
 import React, { useEffect, useRef } from 'react';
 import { cn } from '@/lib/utils';
 
@@ -9,12 +12,6 @@ interface AdSlotProps {
   variant?: 'banner' | 'leaderboard' | 'small' | 'inline' | 'skyscraper';
   label?: string;
   slotId?: string;
-}
-
-declare global {
-  interface Window {
-    adsbygoogle: any[];
-  }
 }
 
 export function AdSlot({ className, label = "Advertisement", variant, slotId }: AdSlotProps) {
@@ -43,12 +40,11 @@ export function AdSlot({ className, label = "Advertisement", variant, slotId }: 
 
   const finalSlotId = slotId || defaultSlotId;
 
-  // Map variant to height for CLS prevention
   const variantStyles = {
     banner: "min-h-[100px] w-full",
-    leaderboard: "min-h-[90px] md:min-h-[250px] w-full",
-    small: "min-h-[60px] w-full",
-    inline: "min-h-[250px] w-full",
+    leaderboard: "min-h-[250px] w-full",
+    small: "min-h-[50px] w-full",
+    inline: "min-h-[250px] w-full md:w-[336px]",
     skyscraper: "min-h-[600px] w-[160px] md:w-[300px]",
   };
 
@@ -64,13 +60,18 @@ export function AdSlot({ className, label = "Advertisement", variant, slotId }: 
       <ins 
         className="adsbygoogle"
         style={{ display: 'block', width: '100%', height: '100%' }}
-        data-ad-client="ca-pub-5015165884772367"
+        data-ad-client="ca-pub-6318347746004237"
         data-ad-slot="YOUR_AD_SLOT_HERE"
         data-ad-format="auto"
         data-full-width-responsive="true"
       ></ins>
       <span className="absolute top-1 right-1 pointer-events-none opacity-40 font-mono text-[9px] uppercase tracking-wider">
         {label}
+      </span>
+    </div>
+  );
+}
+
       </span>
     </div>
   );

@@ -23,11 +23,11 @@ export function Footer() {
           <Link href="/contact" className="hover:text-primary transition-colors">
             Contact
           </Link>
-          <Link href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 hover:text-primary transition-colors">
+          <Link href="https://www.linkedin.com/in/atharv-patil-bab53a284/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 hover:text-primary transition-colors">
             <Linkedin className="h-4 w-4" />
             LinkedIn
           </Link>
-          <Link href="mailto:contact@neuromatrix.com" className="flex items-center gap-1 hover:text-primary transition-colors">
+          <Link href="mailto:atharvpatileoxs@gmail.com" className="flex items-center gap-1 hover:text-primary transition-colors">
             <Mail className="h-4 w-4" />
             Email
           </Link>
